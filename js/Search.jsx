@@ -7,7 +7,7 @@ class Search extends Component {
     super(props);
 
     this.state = {
-      searchTerm: 'this is some sort of debug statement',
+      searchTerm: '',
     };
   }
   handleSearchTermChange = (event) => {
