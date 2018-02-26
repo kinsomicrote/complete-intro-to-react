@@ -4,11 +4,11 @@ import ShowCard from './ShowCard';
 
 class Search extends Component {
   state = {
-    searchTerm: '',
+    searchTerm: ''
   };
-  handleSearchTermChange = (event) => {
+  handleSearchTermChange = event => {
     this.setState({ searchTerm: event.target.value });
-  }
+  };
   render() {
     return (
       <div className="search">
@@ -23,7 +23,9 @@ class Search extends Component {
         </header>
         <div>
           {preload.shows
-            .filter(show => `${show.title} ${show.description}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0
+            .filter(
+              show =>
+                `${show.title} ${show.description}`.toUpperCase().indexOf(this.state.searchTerm.toUpperCase()) >= 0
             )
             .map(show => <ShowCard key={show.imdbID} {...show} />)}
         </div>

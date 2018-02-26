@@ -24,6 +24,7 @@ const ShowCard = props => (
       <h3>{props.title}</h3>
       <h4>({props.year})</h4>
       <p>{props.description}</p>
+      <p>Something good</p>
     </div>
   </Wrapper>
 );
@@ -32,7 +33,7 @@ ShowCard.propTypes = {
   poster: string.isRequired,
   title: string.isRequired,
   year: string.isRequired,
-  description: string.isRequired,
+  description: string.isRequired
 };
 
 export default ShowCard;
