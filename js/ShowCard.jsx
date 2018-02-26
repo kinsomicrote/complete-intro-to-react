@@ -25,7 +25,6 @@ const ShowCard = (props: { poster: string, title: string, year: string, descript
       <h3>{props.title}</h3>
       <h4>({props.year})</h4>
       <p>{props.description}</p>
-      <p>Something good</p>
     </div>
   </Wrapper>
 );
