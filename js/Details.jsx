@@ -6,7 +6,7 @@ import Header from './Header';
 import Spinner from './Spinner';
 
 class Details extends Component {
-  state: {
+  state = {
     apiData: { rating: '' }
   };
   componentDidMount() {
