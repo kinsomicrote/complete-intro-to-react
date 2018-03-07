@@ -1,5 +1,5 @@
 Arguments: 
-  /home/jioke/.nodenv/versions/8.0.0/bin/node /home/jioke/.yarn/bin/yarn.js dev --offline
+  /home/jioke/.nodenv/versions/8.0.0/bin/node /home/jioke/.yarn/bin/yarn.js test
 
 PATH: 
   /home/jioke/.nodenv/versions/8.0.0/bin:/home/jioke/.nodenv/libexec:/home/jioke/.nodenv/plugins/nodenv-update/bin:/home/jioke/.nodenv/plugins/node-build/bin:/home/jioke/.yarn/bin:/home/jioke/.config/yarn/global/node_modules/.bin:/home/jioke/.nodenv/shims:/home/jioke/.nodenv/bin:/home/jioke/.rbenv/plugins/ruby-build/bin:/home/jioke/.rbenv/shims:/home/jioke/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -5611,7 +5611,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c webpack-dev-server --offline
+  Arguments: -c jest
   Directory: /home/jioke/lab/js/react/complete-intro-to-react
   Output:
   
