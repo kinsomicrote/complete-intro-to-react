@@ -31,14 +31,14 @@ const Header = (props: { showSearch?: boolean, handleSearchTermChange: Function,
 };
 
 Header.defaultProps = {
-  showSearch: false,
+  showSearch: false
 };
 
 const mapStateToProps = state => ({ searchTerm: state.searchTerm });
 const mapDispatchToProps = (dispatch: Function) => ({
   handleSearchTermChange(event) {
     dispatch(setSearchTerm(event.target.value));
-  },
+  }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -19,8 +19,8 @@ test('ADD_ADPI_DATA', () => {
         description: 'Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.',
         poster: 'got.jpg',
         imdbID: 'tt0944947',
-        trailer: 'giYeaKsXnsI',
-      },
+        trailer: 'giYeaKsXnsI'
+      }
     }
   );
   expect(state).toEqual({
@@ -33,8 +33,8 @@ test('ADD_ADPI_DATA', () => {
         description: 'Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.',
         poster: 'got.jpg',
         imdbID: 'tt0944947',
-        trailer: 'giYeaKsXnsI',
-      },
-    },
+        trailer: 'giYeaKsXnsI'
+      }
+    }
   });
 });

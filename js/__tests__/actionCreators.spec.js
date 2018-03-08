@@ -10,7 +10,7 @@ const atlanta = {
   poster: 'a.jpg',
   imdbID: 'tt4288182',
   trailer: 'MpEdJ-mmTlY',
-  rating: '0.8',
+  rating: '0.8'
 };
 
 test('setSearchTerm', () => {
@@ -30,7 +30,7 @@ test('getAPIDetails', (done: Function) => {
       request
         .respondWith({
           status: 200,
-          response: atlanta,
+          response: atlanta
         })
         .then(() => {
           expect(request.url).toEqual(`http://localhost:3000/${atlanta.imdbID}`);

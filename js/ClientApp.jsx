@@ -1,11 +1,17 @@
 // @flow
 
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { render } from 'react-dom';
 import App from './App';
 
 const renderApp = () => {
-  render(<App />, document.getElementById('app'));
+  render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+    document.getElementById('app')
+  );
 };
 
 renderApp();

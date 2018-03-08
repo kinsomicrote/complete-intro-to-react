@@ -16,7 +16,7 @@ class Details extends Component {
   props: {
     show: Show,
     rating: string,
-    getAPIData: Function,
+    getAPIData: Function
   };
   render() {
     const { title, description, year, poster, trailer } = this.props.show;
@@ -52,14 +52,14 @@ class Details extends Component {
 const mapStateToProps = (state, ownProps) => {
   const apiData = state.apiData[ownProps.show.imdbID] ? state.apiData[ownProps.show.imdbID] : {};
   return {
-    rating: apiData.rating,
+    rating: apiData.rating
   };
 };
 
 const mapDispatchToProps = (dispatch: Function, ownProps) => ({
   getAPIData() {
     dispatch(getAPIDetails(ownProps.show.imdbID));
-  },
+  }
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Details);
